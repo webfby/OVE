@@ -1,0 +1,337 @@
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, input, textarea, p, hr, thead, tbody, tfoot, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+body, button, input, select, textarea {
+    font-family: 'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', STHeiti, 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+table th {
+    font-weight: inherit;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
+}
+
+img {
+    border: 0 none;
+    width: auto \9;
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+select[size], select[multiple], select[size][multiple] {
+    border: 1px solid #AAA;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, video, progress {
+    display: inline-block;
+}
+
+body {
+    background: #fff;
+}
+
+input::-webkit-input-speech-button {
+    display: none
+}
+
+button, input, textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*login begin*/
+.global-container {
+    position: relative;
+    width: 100vm;
+    height: 100vh;
+    background: #051030 url("../images/bg-login-1.jpg") center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 5.6rem;
+    padding-top: .8rem;
+    text-align: center;
+    background: url("../images/bg-login-2.png") center .01rem no-repeat;
+    background-size: cover;
+
+}
+
+.header img {
+    width: 6.66rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: .1rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #0c5583;
+    font-size: 14px;
+}
+
+.container .main {
+    position: relative;
+    width: 6.26rem;
+    height: 3.82rem;
+    margin: 2.77rem auto 0;
+    background: url("../images/bg-login-main.png") center no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
+
+.container .main .my-form {
+    padding-top: .4rem;
+}
+
+.my-form .line {
+    position: relative;
+    width: 3.74rem;
+    margin: .2rem auto;
+    z-index: 6;
+    clear: both;
+}
+
+.my-form .input-text {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 3.44rem;
+    padding-left: .3rem;
+    height: .54rem;
+    color: rgb(15, 247, 255);
+    border: 1px solid rgb(15, 247, 255);
+    background-color: rgba(0, 25, 71, 0.769);
+    transition: all .3s ease;
+}
+
+.my-form .input-text:hover, .my-form .input-text:focus {
+    box-shadow: 0 0 15px rgb(15, 247, 255);
+}
+
+.input-text::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #235a74;
+    opacity: 1; /* Firefox */
+}
+
+.my-form .register {
+    text-align: center;
+}
+
+.my-form .register .tips {
+    padding-top: .1rem;
+    color: rgb(15, 247, 255);
+    font-size: 14px;
+}
+
+.my-form .register .tips a {
+    color: #ffb400;
+    padding: 0 3px;
+    text-decoration: underline;
+}
+
+.my-form .register .tips a:hover {
+    text-shadow: 0 0 15px #ffb400;
+    text-decoration: none;
+}
+
+.my-form .register .btn {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 3.74rem;
+    height: .54rem;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #001135;
+    border: 1px solid rgb(15, 247, 255);
+    transition: all .3s ease;
+    background-image: -moz-linear-gradient(90deg, rgb(0, 148, 252) 0%, rgb(15, 247, 255) 72%);
+    background-image: -webkit-linear-gradient(90deg, rgb(0, 148, 252) 0%, rgb(15, 247, 255) 72%);
+    background-image: -ms-linear-gradient(90deg, rgb(0, 148, 252) 0%, rgb(15, 247, 255) 72%);
+
+}
+
+.register .btn:hover, .register .btn:focus {
+    box-shadow: 0 0 15px rgb(15, 247, 255);
+    background-image: -moz-linear-gradient(90deg, rgb(15, 247, 255) 0%, rgb(0, 148, 252) 72%);
+    background-image: -webkit-linear-gradient(90deg, rgb(15, 247, 255) 0%, rgb(0, 148, 252) 72%);
+    background-image: -ms-linear-gradient(90deg, rgb(15, 247, 255) 0%, rgb(0, 148, 252) 72%);
+}
+
+.my-form label {
+    position: absolute;
+    left: 0.1rem;
+    top: 0.15rem;
+    width: 0.16rem;
+}
+
+.my-form .error-tips {
+    color: #ff6600;
+    font-size: 13px;
+}
+
+.my-form .hide {
+    display: none;
+}
+
+/**/
+.lighting, .lighting:before, .lighting:after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.lighting {
+    /*background: url("../images/login-3.png") center bottom no-repeat;*/
+    z-index: 2;
+    bottom: .1rem;
+}
+
+.lighting:before {
+    content: "";
+    background: url("../images/login-2.png") center bottom no-repeat;
+    z-index: 3;
+    bottom: .1rem;
+    animation: fade 3000ms infinite;
+    -webkit-animation: fade 3000ms infinite;
+
+}
+
+.lighting:after {
+    content: "";
+    background: url("../images/login-1.png") center bottom no-repeat;
+    z-index: 1;
+    bottom: 1.44rem;
+
+    animation: fade 6000ms infinite;
+    -webkit-animation: fade 6000ms infinite;
+
+}
+
+/**/
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+}
+
+

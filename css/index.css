@@ -1,0 +1,861 @@
+.page-home {
+    position: relative;
+    width: 100%;
+    background: #001334 url("../images/index/bg.png") center 0 no-repeat;
+    overflow-y: auto;
+    background-attachment: fixed;
+}
+
+.footer {
+    text-align: center;
+    padding: 60px;
+    color: #0ff7ff;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background: #001334 url("../images/index/bg-center.png") center top repeat-y;
+    overflow: hidden;
+    /*background-attachment: fixed;*/
+}
+
+/*---slide show skin---*/
+.mySlideshow {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.edslider {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.edslider ul {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.edslider > ul {
+
+    display: block;
+    overflow: hidden;
+}
+
+.edslider > ul li {
+    display: none;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    /*background-size:cover;*/
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.edslider a {
+    display: block;
+}
+
+.edslider a img {
+    border: 0;
+}
+
+.edslider .current {
+    z-index: 1 !important;
+}
+
+/*---controls---*/
+.edslider .controls {
+    top: 0;
+    height: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.edslider .controls .navigator {
+    background: rgba(0, 0, 0, .3);
+    background-image: url(../images/index/sprite-navigator.png);
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    overflow: hidden;
+    top: 225px;
+    transition: background .2s;
+}
+
+.edslider .controls .next {
+    background-position: 0 0;
+    right: 0;
+}
+
+.edslider .controls .prev {
+    background-position: 0 -50px;
+    left: 0;
+}
+
+.edslider .controls .next:hover,
+.edslider .controls .prev:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.edslider .controls .paginator {
+    position: relative;
+    text-align: center;
+    top: 430px;
+}
+
+.edslider .controls .paginator li {
+    background: rgba(15, 247, 255, .3);
+    box-sizing: border-box;
+    display: inline-block;
+    height: 5px;
+    width: 70px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.edslider .controls .paginator li.current,
+.edslider .controls .paginator li:hover,
+.edslider .progress {
+    background: rgba(15, 247, 255, 1);
+}
+
+.edslider .progress {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    z-index: 2;
+    transform: scaleY(.4);
+    background: rgba(15, 247, 255, .8);
+
+}
+
+/*myGuide*/
+.myGuide {
+    margin: 30px auto 20px;
+    text-align: center;
+}
+
+.myGuide .link {
+    width: 148px;
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    border: solid 1px rgb(15, 247, 255);
+    background-color: rgba(15, 247, 255, 0);
+    box-shadow: inset 0 0 15px rgb(15, 247, 255);
+    color: #0efdff;
+    font-size: 16px;
+    margin: 0 15px;
+    transition: all .2s ease-in-out;
+}
+
+.myGuide .link:hover {
+    box-shadow: inset 0 0 5px rgb(15, 247, 255);
+    text-shadow: 0 0 20px rgb(15, 247, 255);
+}
+
+/*myCenter*/
+.my-title {
+    position: relative;
+    width: 830px;
+    height: 100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.myCenter .my-title {
+    background: url("../images/index/title-1.png") center top no-repeat;
+}
+
+.myCourese .my-title {
+    background: url("../images/index/title-2.png") center top no-repeat;
+}
+
+.myFaculty .my-title {
+    background: url("../images/index/title-3.png") center top no-repeat;
+}
+
+.myCollege .my-title {
+    background: url("../images/index/title-4.png") center top no-repeat;
+}
+
+.myExper .my-title {
+    background: url("../images/index/title-5.png") center top no-repeat;
+}
+
+.myCourese .my-title > a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: normal;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgb(15, 247, 255)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background .2s;
+}
+
+.myCourese .my-title > a:hover {
+    text-shadow: 0 0 20px rgb(15, 247, 255);
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgb(15, 247, 255)), to(rgba(255, 255, 255, 1)));
+}
+
+.myCenter .left-img {
+    float: left;
+    width: 500px;
+    height: 340px;
+    background: url("../images/index/img-pc.png") left top no-repeat;
+}
+
+.myCenter .right-txt {
+    float: right;
+    width: 523px;
+    height: 282px;
+    color: #0ff7ff;
+    font-size: 16px;
+    line-height: 24px;
+
+    background: url("../images/index/img-pc-txt.png") 0 0 no-repeat;
+    overflow: hidden;
+}
+
+.myCenter .right-txt .txt {
+    padding: 35px;
+}
+
+/*myCourese*/
+.myCourese .clearfix {
+    padding-left: 20px;
+}
+
+.myCourese .card {
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    height: 310px;
+    border: 1px solid #0ff7ff;
+    margin: 30px 30px 35px;
+    text-align: left;
+    transition: all .2s ease-in-out;
+}
+
+.myCourese .card:hover {
+    box-shadow: 0 0 30px #0ff7ff;
+}
+
+.myCourese .card:hover h4 {
+    color: #3cf5fb;
+    text-shadow: 0 0 20px rgb(15, 247, 255);
+}
+
+.myCourese .card a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.myCourese .card:before, .myCourese .card:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 4px;
+    height: 20px;
+    background: #0ff7ff;
+}
+
+.myCourese .card:before {
+    left: -2px;
+}
+
+.myCourese .card:after {
+    right: -2px;
+}
+
+.myCourese .card a:before, .myCourese .card a:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 70px;
+    height: 4px;
+    background: #0ff7ff;
+}
+
+.myCourese .card a:before {
+    left: -2px;
+}
+
+.myCourese .card a:after {
+    right: -2px;
+}
+
+.myCourese .card dt {
+    width: 298px;
+    height: 170px;
+    margin: 0 auto 5px;
+    overflow: hidden;
+}
+
+.myCourese .card dt img {
+    width: 298px;
+}
+
+.myCourese .card dd > h4 {
+    width: 288px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #0ff7ff;
+    padding: 0 5px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("../images/index/t-bg.png") 0 0 repeat;
+    transition: all .6s ease;
+}
+
+.myCourese .card dd .txt {
+    color: #0ff7ff;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+    width: 298px;
+    height: 55px;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+/*-myFaculty-*/
+/*swiper*/
+.swiper-container {
+    width: 1080px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+}
+
+.gallery-top {
+    min-height: 150px;
+    width: 100%;
+    margin-top: 20px;
+}
+ .swiper-wrapper{
+
+}
+.gallery-top .swiper-slide {
+    position: relative;
+    width: 942px;
+    margin: 0 auto;
+    -webkit-perspective: 1000px;
+    -webkit-backface-visibility: hidden;
+}
+
+.gallery-top .swiper-slide dl:before, .gallery-top .swiper-slide dl:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #0ff7ff;
+    z-index: 2;
+    display: none;
+}
+
+.gallery-top .swiper-slide dl:before {
+    left: -3px;
+    bottom: 0;
+}
+
+.gallery-top .swiper-slide dl:after {
+    right: -3px;
+    bottom: 0;
+}
+
+.gallery-top .swiper-slide dl {
+    position: relative;
+    /*height: 110px;*/
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid #0ff7ff;
+    padding: 20px;
+    box-shadow: inset 0 0 55px rgba(15, 247, 255, .8);
+}
+
+.gallery-top .swiper-slide dl dt {
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+}
+
+.gallery-top .swiper-slide dl dd {
+    font-size: 12px;
+    color: #0ff7ff;
+    line-height: 20px;
+    padding: 20px 30px 20px 0;
+}
+
+.gallery-thumbs {
+    height: 185px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gallery-thumbs .swiper-slide {
+    position: relative;
+    height: 100%;
+    opacity: 0.6;
+    background: url("../images/index/tech-bg.png") center no-repeat;
+    cursor: pointer;
+}
+
+.gallery-thumbs .swiper-slide img {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+    position: relative;
+    background: none;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("../images/index/tech-bg-hover.png") center no-repeat;
+    -webkit-animation: spin 11s linear infinite;
+    animation: spin 11s linear infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    z-index: 2;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active:after {
+    content: '';
+    position: absolute;
+    width: 83px;
+    height: 60px;
+    right: 40px;
+    bottom: 20px;
+    background: url("../images/index/tech-bg2.png") right bottom no-repeat;
+    z-index: -1;
+    display: none;
+}
+
+/**/
+.myFaculty {
+    position: relative;
+    background: url("../images/index/bg-teacher.jpg") center top no-repeat;
+    height: 592px;
+    overflow: hidden;
+    /*background-attachment: fixed;*/
+}
+
+.myFaculty .teach {
+    margin: auto;
+    width: 194px;
+    height: 194px;
+
+}
+
+/*--*/
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*师资力量*/
+.myExper {
+    position: relative;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.myExper:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background: url("../images/index/bg-exp-1.png") center bottom no-repeat;
+    -webkit-animation: bird 5s linear infinite;
+    animation: bird 5s linear infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.myExper .tab-info-wrap {
+    position: relative;
+    width: 900px;
+    height: 190px;
+    margin: 0 auto 30px;
+    box-sizing: border-box;
+    z-index: 2;
+
+    border: 1px solid #0ff7ff;
+    box-shadow: inset 0 0 35px rgba(15, 247, 255, .8);
+}
+
+.tab-info-wrap:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    top: 100%;
+    left: 0;
+    background: url("../images/index/bg-exp-2.png") 150px 0 no-repeat;
+    z-index: 1;
+}
+
+.l-up-border:after, .r-up-border:after, .l-down-border:after, .r-down-border:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background: #0ff7ff;
+    z-index: 2;
+    box-shadow: 0 0 5px #0ff7ff;
+
+}
+
+.l-up-border:before, .r-up-border:before, .l-down-border:before, .r-down-border:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #0ff7ff;
+    z-index: 2;
+    box-shadow: 0 0 5px #0ff7ff;
+
+}
+
+.l-up-border:before {
+    left: -2px;
+    bottom: 0;
+}
+
+.r-up-border:before {
+    right: -4px;
+    bottom: 0;
+}
+
+.l-up-border:after {
+    left: -2px;
+    bottom: -2px;
+}
+
+.r-up-border:after {
+    right: -4px;
+    bottom: -2px;
+}
+
+.r-down-border:before {
+    left: -2px;
+    top: 0;
+}
+
+.l-down-border:before {
+    right: -4px;
+    top: 0;
+}
+
+.r-down-border:after {
+    left: -2px;
+    top: -2px;
+}
+
+.l-down-border:after {
+    right: -4px;
+    top: -2px;
+}
+
+/**/
+
+.tab-info-wrap .tab-info {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    color: #0ff7ff;
+    line-height: 20px;
+    display: table;
+
+}
+
+.tab-info-wrap .tab-info.hide {
+    display: none;
+
+}
+
+.tab-info .info-l {
+    width: 33.33%;
+    padding: 25px;
+    font-size: 13px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.tab-info .info-l > img {
+    height: 55px;
+}
+
+.tab-info .info-l > h5 {
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.tab-nav-wrap .tab-nav {
+    display: table;
+    margin: auto;
+}
+
+.tab-nav .nav-l {
+    position: relative;
+    width: 302px;
+    height: 302px;
+    padding: 25px;
+    font-size: 13px;
+    color: #0ff7ff;
+    line-height: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.tab-nav .nav-l p {
+    width: 140px;
+    margin: auto;
+}
+
+.tab-nav .nav-l:before, .tab-nav .nav-l:hover:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("../images/index/bg-exp.png") center no-repeat;
+    transition: background .5s ease-in-out;
+}
+
+.tab-nav .nav-l:hover:before, .nav-l.active:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/index/bg-exp-hover.png") center no-repeat;
+    animation: spin 11s linear infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.tab-nav-wrap .tab-nav .nav-l.active:after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 3px;
+    height: 5px;
+    background: url("../images/index/bg-exp-line.png") 0 0 no-repeat;
+
+}
+
+.tab-nav-wrap .tab-nav .nav-l:nth-child(1).active:after {
+    transform: rotate(35deg);
+    top: -22px;
+    height: 75px;
+}
+
+.tab-nav-wrap .tab-nav .nav-l:nth-child(2).active:after {
+    transform: rotate(0deg);
+    top: -22px;
+    height: 75px;
+}
+
+.tab-nav-wrap .tab-nav .nav-l:nth-child(3).active:after {
+    transform: rotate(-35deg);
+    top: -22px;
+    height: 75px;
+}
+
+/**/
+
+@-webkit-keyframes bird {
+    0% {
+        -webkit-transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@keyframes bird {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*学院动态*/
+.myCollege {
+    position: relative;
+}
+
+.myCollege .tab-coll {
+    position: relative;
+    width: 1073px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.myCollege .tab-coll a {
+    width: 146px;
+    height: 49px;
+    line-height: 55px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    background: url("../images/index/table-bg.png") 0 center no-repeat;
+    transition: color .3s ease-in-out;
+}
+
+.myCollege .tab-coll a:hover {
+    color: #ffb90d;
+    text-shadow: 0 0 10px #ffb90d;
+}
+
+.myCollege .tab-coll a.cur {
+    color: #ffb90d;
+    text-shadow: 0 0 5px #ffb90d;
+    background: url("../images/index/tabe-bg-hover.png") 0 center no-repeat;
+}
+
+.myCollege .tab-coll-info {
+    position: relative;
+    width: 1073px;
+    height: 307px;
+    overflow: hidden;
+    margin: 10px auto;
+    border: solid 1px rgb(13, 227, 236);
+    box-shadow: inset 0 0 40px rgba(15, 247, 255, .8);
+}
+
+.myCollege .tab-coll-info dl {
+    margin: 30px 0 0 30px;
+}
+
+.myCollege .tab-coll-info dl a {
+    display: inline-block;
+    width: 100%;
+    color: #0ff7ff;
+    transition: all .3s ease-in-out;
+}
+
+.myCollege .tab-coll-info dl h4 {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 10px;
+    max-height: 60px;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.myCollege .tab-coll-info dl dt {
+    width: 295px;
+    float: left;
+
+}
+
+.myCollege .tab-coll-info dl dd {
+    width: 685px;
+    height: 200px;
+    float: right;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.myCollege .tab-coll-info dl dd a {
+    width: 100%;
+    display: block;
+    line-height: 20px;
+    height: 20px;
+    padding: 10px 0;
+    transition: all .3s ease-in-out;
+}
+
+.myCollege .tab-coll-info dl dd a:hover, .myCollege .tab-coll-info dl a:hover {
+    color: #ffb90d;
+}
+
+.myCollege .tab-coll-info dl dd .title {
+    width: 78%;
+    display: inline-block;
+}
+
+.myCollege .tab-coll-info dl dd .date {
+    width: 20%;
+    display: inline-block;
+    float: right;
+}
